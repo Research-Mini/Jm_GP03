@@ -10434,7 +10434,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 937840070}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
@@ -16254,7 +16254,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!1001 &1348042708
 PrefabInstance:
@@ -27115,7 +27115,7 @@ PrefabInstance:
     - target: {fileID: 2821734458469336095, guid: 8efa35b10740a4549be6def30b0908a4,
         type: 3}
       propertyPath: m_DefaultControlScheme
-      value: Keyboard&Mouse
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4972403336493158063, guid: 8efa35b10740a4549be6def30b0908a4,
         type: 3}
@@ -27169,8 +27169,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8236689170972421330, guid: 8efa35b10740a4549be6def30b0908a4,
         type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8236689170972421330, guid: 8efa35b10740a4549be6def30b0908a4,
+        type: 3}
       propertyPath: JumpPower
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8236689170972421330, guid: 8efa35b10740a4549be6def30b0908a4,
+        type: 3}
+      propertyPath: rotationSpeed
+      value: 75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
