@@ -4,11 +4,19 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-   
+    public float speed;
+    public float rotationSpeed;
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(0, 0, 1);
+        if (Input.GetKey(KeyCode.W)){ transform.Translate(0, 0, speed); }
+        if (Input.GetKey(KeyCode.S)){ transform.Translate(0, 0, -speed); }
+        if (Input.GetKey(KeyCode.A)){ transform.Translate(-speed, 0, 0); }
+        if (Input.GetKey(KeyCode.D)){ transform.Translate(speed, 0, 0); }
+
+        float mouseX = Input.GetAxis("Mouse X");
+        //float mouseY = Input.GetMouseButtonUp(2);
+        transform.Rotate(0, mouseX * rotationSpeed, 0);
         
     }
 }
