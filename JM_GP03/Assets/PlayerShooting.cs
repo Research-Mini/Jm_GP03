@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerShooting : MonoBehaviour
 {
@@ -9,9 +10,9 @@ public class PlayerShooting : MonoBehaviour
     public GameObject shootPoint;
 
     // Update is called once per frame
-    void Update()
+    public void OnFire(InputValue value)
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0)) 
+        if (value.isPressed) 
         {
             //Instantiate(prefab, transform.position,transform.rotation);
             GameObject clone = Instantiate(prefab);
@@ -19,4 +20,6 @@ public class PlayerShooting : MonoBehaviour
             clone.transform.rotation = shootPoint.transform.rotation;
         }
     }
+
+
 }
