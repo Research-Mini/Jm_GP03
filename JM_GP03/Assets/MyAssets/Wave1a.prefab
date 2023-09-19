@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 384882865611482997}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.89, y: 60.88543, z: 77.154594}
+  m_LocalPosition: {x: 58.6, y: 60.88543, z: 77.154594}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46,5 +46,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 4053910787986409639, guid: 49758ac7b224b0b46ba5d718b2456ab4, type: 3}
   startTime: 1
-  endTime: 5
+  endTime: 20
   spawnRate: 0.5
