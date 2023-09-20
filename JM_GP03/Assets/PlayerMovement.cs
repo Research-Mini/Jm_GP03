@@ -8,13 +8,15 @@ public class PlayerMovement : MonoBehaviour
     
     public float speed;
     public float rotationSpeed;
+    public float jumpForce = 5f;
 
     private Vector2 movementValue;
     private float lookValue;
-
+    private Rigidbody rb;
 
     private void Awake()
     {
+        rb = GetComponent<Rigidbody>();
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -41,16 +43,26 @@ public class PlayerMovement : MonoBehaviour
         {
             speed /= 3;
         }
-
+        if (Keyboard.current.spaceKey.wasPressedThisFrame )
+        {
+           Jump();
+        }
+     
         transform.Translate(
             movementValue.x * Time.deltaTime, 0, movementValue.y * Time.deltaTime);
         transform.Rotate(0, lookValue * Time.deltaTime, 0);
 
        
     }
+   
+    void Jump()
+    {
+        rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+    }
 
-    
 
 
- 
+
+
+
 }
