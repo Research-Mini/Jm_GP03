@@ -16254,7 +16254,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 84
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!1001 &1348042708
 PrefabInstance:
@@ -17181,7 +17181,7 @@ PrefabInstance:
     - target: {fileID: 1507636620937791777, guid: 7097ba7ba649e1f41bba232312bdcbd8,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 4.32523
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1507636620937791777, guid: 7097ba7ba649e1f41bba232312bdcbd8,
         type: 3}
@@ -27116,17 +27116,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Actions
       value: 
-      objectReference: {fileID: -944628639613478452, guid: 2034e8a8792fbd84baa6006d2bb23d9f,
+      objectReference: {fileID: -944628639613478452, guid: a00b5aa13fcad6546a98771c2a8da145,
         type: 3}
     - target: {fileID: 2821734458469336095, guid: 8efa35b10740a4549be6def30b0908a4,
         type: 3}
       propertyPath: m_DefaultActionMap
-      value: PlayerActions
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2821734458469336095, guid: 8efa35b10740a4549be6def30b0908a4,
         type: 3}
       propertyPath: m_DefaultControlScheme
-      value: 
+      value: Keyboard&Mouse
       objectReference: {fileID: 0}
     - target: {fileID: 4972403336493158063, guid: 8efa35b10740a4549be6def30b0908a4,
         type: 3}

@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 movementValue;
     private float lookValue;
     private Rigidbody rb;
-
+ 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Keyboard.current.spaceKey.wasPressedThisFrame )
         {
-           Jump();
+           Jump(); 
         }
      
         transform.Translate(
@@ -57,8 +57,10 @@ public class PlayerMovement : MonoBehaviour
    
     void Jump()
     {
-        rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-    }
+        
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+         
+     }
 
 
 
